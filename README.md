@@ -1,7 +1,7 @@
 # Hungry - Restaurant Web App
 
-<!-- Project is under development...
-I'll update after adding every feature. -->
+Project is under development...
+I'll update after adding every feature.
 
 Hungry is a modern and responsive restaurant web application built with Next.js 14, designed to provide an intuitive and seamless dining experience. This app allows users to explore menus, book reservations, and order food online.
 
