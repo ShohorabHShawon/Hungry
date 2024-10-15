@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <section>
-        <h1 className="text-9xl uppercase text-center font-black m-5 font-lexend">
+        <h1 className="text-9xl uppercase text-center font-black m-5">
           HUNGRY
         </h1>
         <div className="flex items-end justify-end mr-8">
