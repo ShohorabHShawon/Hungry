@@ -23,12 +23,12 @@ function Header() {
           <DarkmodeButton />
           <Navbar title="home" address="/" Icon={FaHome} />
           <Navbar title="about" address="#about" Icon={FaInfo} />
+          <Navbar title="menu" address="#menu" Icon={MdOutlineRestaurantMenu} />
           <Navbar
             title="contact"
             address="#contact"
             Icon={MdConnectWithoutContact}
           />
-          <Navbar title="menu" address="#menu" Icon={MdOutlineRestaurantMenu} />
         </div>
       </div>
     </div>
