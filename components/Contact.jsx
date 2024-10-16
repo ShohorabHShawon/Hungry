@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="py-10 bg-gray-200 dark:bg-[#262626]">
+    <div className="py-10 my-24 bg-gray-200 dark:bg-[#262626]">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl text-center font-lexend font-bold mb-8">
           Contact Us
@@ -16,7 +16,7 @@ const Contact = () => {
             </p>
             <div className="mb-4">
               <h3 className="font-semibold ">Address:</h3>
-              <p className="">123 Food Lane, Flavor Town, FT 45678</p>
+              <p className="">Sector 7 Uttara, Dhaka</p>
             </div>
             <div className="mb-4">
               <h3 className="font-semibold ">Phone:</h3>

@@ -61,7 +61,7 @@ function Hero() {
               alt="image"
               className="p-2 drop-shadow-xl"
             />
-            <p className="p-2">
+            <p className="p-4">
               Our food is made with the freshest ingredients and is perfect for
               those who want to eat healthy and tasty food. Lorem ipsum dolor
               sit, amet consectetur adipisicing elit. Enim, sit iusto dolore
@@ -72,7 +72,7 @@ function Hero() {
           </div>
 
           <div className="flex max-w-7xl text-wrap justify-evenly items-center">
-            <p className="p-2">
+            <p className="p-4">
               Our food is made with the freshest ingredients and is perfect for
               those who want to eat healthy and tasty food. Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Officia, eligendi. Deleniti
@@ -96,7 +96,7 @@ function Hero() {
               alt="image"
               className="p-2 drop-shadow-xl"
             />
-            <p className="p-2">
+            <p className="p-4">
               Our food is made with the freshest ingredients and is perfect for
               those who want to eat healthy and tasty food. Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Est, ad deleniti eum

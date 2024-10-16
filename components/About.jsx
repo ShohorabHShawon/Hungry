@@ -56,7 +56,7 @@ function About() {
                 height={500}
                 src="/fresh.png"
                 alt="Excellent Service"
-                className="w-32 h-32 mx-auto mb-4"
+                className="w-32 h-32 mx-auto mb-4 hover:scale-110 translate duration-300 ease-in-out"
               />
               <h3 className="text-xl font-semibold mb-2">Fresh Ingredients</h3>
               <p className="">
@@ -71,7 +71,7 @@ function About() {
                 height={500}
                 src="/location.png"
                 alt="Excellent Service"
-                className="w-32 h-32 mx-auto mb-4"
+                className="w-32 h-32 mx-auto mb-4 hover:scale-110 translate duration-300 ease-in-out"
               />
               <h3 className="text-xl font-semibold mb-2">Cozy Atmosphere</h3>
               <p className="">
@@ -86,7 +86,7 @@ function About() {
                 height={500}
                 src="/service.png"
                 alt="Excellent Service"
-                className="w-32 h-32 mx-auto mb-4"
+                className="w-32 h-32 mx-auto mb-4 hover:scale-110 translate duration-300 ease-in-out"
               />
               <h3 className="text-xl font-semibold mb-2">Excellent Service</h3>
               <p className="">
