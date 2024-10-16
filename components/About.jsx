@@ -5,9 +5,7 @@ function About() {
   return (
     <div className="py-10 bg-gray-200 dark:bg-[#262626]">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl text-center font-lexend font-bold  mb-6">
-          About Hungry
-        </h1>
+        <h1 className="text-4xl text-center font-bold mb-6">About Hungry</h1>
 
         <p className="text-lg text-center max-w-2xl mx-auto mb-10">
           Welcome to Hungry, where we serve the finest dishes made with love and
@@ -38,9 +36,9 @@ function About() {
             <h2 className="text-2xl font-semibold  mb-4">Our Team</h2>
             <p className="">
               Our talented chefs and friendly staff work tirelessly to ensure
-              every guest has an amazing dining experience. We're committed to
-              delivering top-quality service and making your visit to Hungry a
-              memorable one.
+              every guest has an amazing dining experience. We&apos;re committed
+              to delivering top-quality service and making your visit to Hungry
+              a memorable one.
             </p>
           </div>
         </div>
