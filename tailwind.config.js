@@ -11,6 +11,11 @@ module.exports = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        cursive: ['Ephesis', 'cursive'],
+        lexend: ['Lexend', 'sans-serif'],
+      },
     },
   },
   plugins: [],

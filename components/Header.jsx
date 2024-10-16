@@ -10,11 +10,13 @@ import DarkmodeButton from './DarkmodeButton';
 
 function Header() {
   return (
-    <div className="shadow-lg">
-      <div className="flex justify-between items-center p-3 max-w-6xl mx-auto">
+    <div className="shadow-lg relative z-50">
+      <div className="flex justify-between items-center p-3 max-w-7xl mx-auto">
         <div className="flex gap-4 items-center">
           <Link href="/">
-            <h1 className="text-3xl font-extrabold">HUNGRY</h1>
+            <h1 className="text-3xl font-lexend text-orange-600 font-extrabold">
+              HUNGRY
+            </h1>
           </Link>
         </div>
         <div className="flex gap-4 mx-4">

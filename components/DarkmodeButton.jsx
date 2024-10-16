@@ -7,7 +7,7 @@ function DarkmodeButton() {
   const { theme, setTheme, systemTheme } = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
   return (
-    <div className="flex justify-center items-center text-center">
+    <div className="flex justify-center items-center text-center hover:text-orange-600">
       {currentTheme === 'dark' ? (
         <MdLightMode
           onClick={() => setTheme('light')}
