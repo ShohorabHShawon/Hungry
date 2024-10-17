@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section  */}
-      <section id="home">
-        <Hero />
+      <section id="home" className="">
+        <Hero className="" />
       </section>
 
       {/* About  */}

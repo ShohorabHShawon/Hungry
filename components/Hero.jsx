@@ -2,18 +2,24 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Hero() {
   return (
     <>
       <div
-        className="flex justify-evenly items-center mx-auto max-w-8xl
+        className="h-screen flex justify-evenly items-center mx-auto max-w-8xl
         bg-gradient-to-r from-blue-300 to-cyan-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black"
       >
         <div className="container py-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
-            <div className="space-y-7 text-dark order-2 sm:order-1 ml-3">
-              <h1 className="text-6xl font-lexend">
+            <motion.div
+              initial={{ y: 100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="space-y-7 text-dark order-2 sm:order-1 ml-3 text-center sm:text-left md:text-left lg:text-left xl:text-left"
+            >
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
                 Fresh, Delicious & Healthy Foods{' '}
                 <span className="text-orange-600 font-cursive text-7xl">
                   Delivery
@@ -35,33 +41,55 @@ function Hero() {
                   Order Now
                 </span>
               </Link>
-            </div>
-            <div className="order-1 sm:order-2 flex justify-center md:justify-end w-full lg:justify-end">
+            </motion.div>
+            <motion.div
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="order-1 sm:order-2 flex justify-center md:justify-end w-full lg:justify-end xl:justify-end"
+            >
               <Image
                 src="/hero.png"
                 alt="hero image"
                 width={500}
-                height={500}
-                className=""
+                height={200}
+                className="w-[300px] md:w-[400px] lg:w-[500px] xl:w-auto h-auto"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-      <div className="">
+
+      {/* 2nd Part */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        className=""
+      >
         <h1 className="text-3xl text-center font-lexend m-6 p-2 font-bold">
           Healthy and Tasty
         </h1>
         <div className="flex justify-evenly items-center flex-wrap">
           <div className="flex max-w-7xl text-wrap justify-evenly items-center">
-            <Image
-              src="/capsicum.png"
-              width={200}
-              height={200}
-              alt="image"
-              className="p-2 drop-shadow-xl"
-            />
-            <p className="p-4">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.9,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+            >
+              <Image
+                src="/capsicum.png"
+                width={500}
+                height={500}
+                alt="image"
+                className="p-2 drop-shadow-xl w-[1400px] sm:w-auto md:w-auto lg:w-auto xl:w-auto"
+              />
+            </motion.div>
+            <p className="p-6 text-balance">
               Our food is made with the freshest ingredients and is perfect for
               those who want to eat healthy and tasty food. Lorem ipsum dolor
               sit, amet consectetur adipisicing elit. Enim, sit iusto dolore
@@ -72,7 +100,7 @@ function Hero() {
           </div>
 
           <div className="flex max-w-7xl text-wrap justify-evenly items-center">
-            <p className="p-4">
+            <p className="p-6 text-end text-balance">
               Our food is made with the freshest ingredients and is perfect for
               those who want to eat healthy and tasty food. Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Officia, eligendi. Deleniti
@@ -80,23 +108,43 @@ function Hero() {
               asperiores voluptatum inventore debitis adipisci natus non
               laboriosam ea perspiciatis ipsam?
             </p>
-            <Image
-              src="/greencapsicum.png"
-              width={200}
-              height={200}
-              alt="image"
-              className="p-2 drop-shadow-xl"
-            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.9,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+            >
+              <Image
+                src="/greencapsicum.png"
+                width={500}
+                height={500}
+                alt="image"
+                className="p-2 drop-shadow-xl w-[1400px] sm:w-auto md:w-auto lg:w-auto xl:w-auto"
+              />
+            </motion.div>
           </div>
           <div className="flex max-w-7xl text-wrap justify-evenly items-center">
-            <Image
-              src="/leaf.png"
-              width={200}
-              height={200}
-              alt="image"
-              className="p-2 drop-shadow-xl"
-            />
-            <p className="p-4">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.9,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+            >
+              <Image
+                src="/leaf.png"
+                width={500}
+                height={500}
+                alt="image"
+                className="p-2 drop-shadow-xl w-[1400px] sm:w-auto md:w-auto lg:w-auto xl:w-auto"
+              />
+            </motion.div>
+            <p className="p-6 text-balance">
               Our food is made with the freshest ingredients and is perfect for
               those who want to eat healthy and tasty food. Lorem ipsum dolor
               sit amet consectetur adipisicing elit. Est, ad deleniti eum
@@ -105,7 +153,7 @@ function Hero() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

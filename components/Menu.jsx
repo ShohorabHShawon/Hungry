@@ -1,20 +1,56 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Menu = () => {
   return (
     <div className="py-14">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl text-center font-lexendDeca font-bold mb-8 py-5">
-          Our Menu
-        </h1>
-
         {/* Starters Section */}
         <div className="mb-10">
-          <h2 className="text-2xl font-semibold mb-6">Starters</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5 }}
+            viewport={{ once: false }}
+          >
+            <h1 className="text-4xl text-center font-lexendDeca font-bold mb-8 py-5">
+              Our Menu
+            </h1>
+          </motion.div>
+
+          {/* Category Title Animation */}
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              ease: [0.65, 0, 0.35, 1],
+            }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl font-semibold mb-6">Starters</h2>
+          </motion.div>
+
+          {/* Menu Animation*/}
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 h-96 lg:h-72 w-auto">
             {/* Starter Item */}
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/bread.png"
                 alt="Garlic Bread"
@@ -29,9 +65,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳499</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/salad.png"
                 alt="Caesar Salad"
@@ -47,9 +97,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳799</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/soup.png"
                 alt="Soup of the Day"
@@ -64,9 +128,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳650</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/sandwich.png"
                 alt="Sandwich"
@@ -81,16 +159,42 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳650</p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* Main Courses Section */}
         <div className="mb-10 mt-36 sm:mt-32 md:mt-32 lg:mt-52 xl:mt-20">
-          <h2 className="text-2xl font-semibold mb-6">Main Dishes</h2>
+          {/* Category Title Animation */}
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.7,
+              ease: [0.65, 0, 0.35, 1],
+            }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl font-semibold mb-6">Main Courses</h2>
+          </motion.div>
+
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 h-96 lg:h-72 w-auto">
             {/* Main Course Item */}
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/grill.png"
                 alt="Grilled Chicken"
@@ -105,9 +209,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳1499</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/pizza.png"
                 alt="Margherita Pizza"
@@ -123,9 +241,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳1299</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/steak.png"
                 alt="Steak and Fries"
@@ -140,9 +272,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳1999</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/burger.png"
                 alt="Burger and Fries"
@@ -158,16 +304,42 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳699</p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
 
         {/* Desserts Section */}
         <div className="mb-10 mt-36 sm:mt-32 md:mt-32 lg:mt-52 xl:mt-20">
-          <h2 className="text-2xl font-semibold mb-6">Desserts</h2>
+          {/* Category Title Animation */}
+          <motion.div
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.7,
+              ease: [0.65, 0, 0.35, 1],
+            }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl font-semibold mb-6">Desserts</h2>
+          </motion.div>
+
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 h-96 lg:h-72 w-auto">
             {/* Dessert Item */}
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/cake.png"
                 alt="Chocolate Cake"
@@ -182,9 +354,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳599</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/cheesecake.png"
                 alt="Cheesecake"
@@ -200,9 +386,22 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳699</p>
               </div>
-            </div>
-
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/ice-cream.png"
                 alt="Ice-Cream Sundae"
@@ -218,9 +417,23 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳450</p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="hover:scale-105 transition duration-300 ease-in-out hover:shadow-xl rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.7,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: false }}
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.1 },
+                boxShadow: '0px 0px 15px 0px rgba(0, 0, 0, 0.2)',
+              }}
+              className="rounded-lg shadow-md flex justify-start items-center bg-white dark:bg-[#151515]"
+            >
               <Image
                 src="/donut.png"
                 alt="Donut"
@@ -235,7 +448,7 @@ const Menu = () => {
                 </p>
                 <p className="font-semibold">৳150</p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
