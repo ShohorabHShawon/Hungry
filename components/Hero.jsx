@@ -43,7 +43,7 @@ function Hero() {
               </Link>
             </motion.div>
             <motion.div
-              initial={{ y: -100, opacity: 0 }}
+              initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
               className="order-1 sm:order-2 flex justify-center md:justify-end w-full lg:justify-end xl:justify-end"
