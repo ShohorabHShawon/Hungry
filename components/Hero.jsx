@@ -51,7 +51,7 @@ function Hero() {
               <Image
                 src="/hero.png"
                 alt="hero image"
-                width={200}
+                width={500}
                 height={200}
                 className="w-[300px] sm:w-[320px] md:w-[360px] lg:w-auto xl:w-auto h-auto"
               />
