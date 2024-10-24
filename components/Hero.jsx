@@ -8,18 +8,18 @@ function Hero() {
   return (
     <>
       <div
-        className="h-screen flex justify-evenly items-center mx-auto max-w-8xl
+        className="h-screen flex justify-evenly items-center mx-auto
         bg-gradient-to-r from-blue-300 to-cyan-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black"
       >
         <div className="container py-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 place-items-center min-h-[600px] mx-5">
             <motion.div
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
-              className="space-y-7 text-dark order-2 sm:order-1 ml-3 text-center sm:text-left md:text-left lg:text-left xl:text-left"
+              className="space-y-7 lg:col-span-2 text-dark order-2 sm:order-1 ml-3 text-center sm:text-center md:text-center lg:text-left xl:text-left"
             >
-              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl">
+              <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-lexend font-bold">
                 Fresh, Delicious & Healthy Foods{' '}
                 <span className="text-orange-600 font-cursive text-7xl">
                   Delivery
@@ -46,14 +46,14 @@ function Hero() {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 1 }}
-              className="order-1 sm:order-2 flex justify-center md:justify-end w-full lg:justify-end xl:justify-end"
+              className="order-1 sm:order-1 flex justify-center md:justify-center w-full lg:justify-end xl:justify-end p-5"
             >
               <Image
                 src="/hero.png"
                 alt="hero image"
                 width={500}
                 height={200}
-                className="w-[300px] md:w-[400px] lg:w-[500px] xl:w-auto h-auto"
+                className="w-[300px] sm:w-[320px] md:w-[360px] lg:w-auto xl:w-auto h-auto"
               />
             </motion.div>
           </div>

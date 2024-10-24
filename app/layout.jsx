@@ -22,7 +22,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: 'Restaurant',
+  title: 'Hungry',
   description: 'Restaurant App',
 };
 
