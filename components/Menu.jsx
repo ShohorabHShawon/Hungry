@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Menu = () => {
   return (
-    <div className="py-14">
+    <div className="py-14 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Starters Section */}
         <div className="mb-10">
@@ -37,8 +37,8 @@ const Menu = () => {
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 h-96 lg:h-72 w-auto">
             {/* Starter Item */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -68,8 +68,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -100,8 +100,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -131,8 +131,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -181,8 +181,8 @@ const Menu = () => {
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 h-96 lg:h-72 w-auto">
             {/* Main Course Item */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -212,8 +212,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -244,8 +244,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -275,8 +275,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -326,8 +326,8 @@ const Menu = () => {
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 h-96 lg:h-72 w-auto">
             {/* Dessert Item */}
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -357,8 +357,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -388,8 +388,8 @@ const Menu = () => {
               </div>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],
@@ -420,8 +420,8 @@ const Menu = () => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 0.7,
                 ease: [0.65, 0, 0.35, 1],

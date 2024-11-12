@@ -9,13 +9,13 @@ function Hero() {
     <>
       <div
         className="h-screen flex justify-evenly items-center mx-auto
-        bg-gradient-to-r from-blue-300 to-cyan-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black"
+        bg-gradient-to-r from-blue-300 to-cyan-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black overflow-hidden"
       >
         <div className="container py-6">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 place-items-center min-h-[600px] mx-5">
             <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              initial={{ x: -200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}
               className="space-y-7 lg:col-span-2 text-dark order-2 sm:order-1 ml-3 text-center sm:text-center md:text-center lg:text-left xl:text-left"
             >
@@ -43,8 +43,8 @@ function Hero() {
               </Link>
             </motion.div>
             <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              initial={{ x: 200, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}
               className="order-1 sm:order-1 flex justify-center md:justify-center w-full lg:justify-end xl:justify-end p-5"
             >
@@ -65,7 +65,7 @@ function Hero() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className=""
+        className="overflow-hidden"
       >
         <h1 className="text-3xl text-center font-lexend m-6 p-2 font-bold">
           Healthy and Tasty
@@ -89,25 +89,45 @@ function Hero() {
                 className="p-2 drop-shadow-xl w-[1400px] sm:w-auto md:w-auto lg:w-auto xl:w-auto"
               />
             </motion.div>
-            <p className="p-6 text-balance">
-              Our food is made with the freshest ingredients and is perfect for
-              those who want to eat healthy and tasty food. Lorem ipsum dolor
-              sit, amet consectetur adipisicing elit. Enim, sit iusto dolore
-              voluptate, quod porro, facere tempore ex corrupti excepturi
-              reprehenderit iure id doloribus ratione ad vel eveniet. Sunt,
-              neque.
-            </p>
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 1 }}
+              transition={{
+                duration: 0.9,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: true }}
+            >
+              <p className="p-6 text-justify">
+                Our food is made with the freshest ingredients and is perfect
+                for those who want to eat healthy and tasty food. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Enim, sit iusto
+                dolore voluptate, quod porro, facere tempore ex corrupti
+                excepturi reprehenderit iure id doloribus ratione ad vel
+                eveniet. Sunt, neque.
+              </p>
+            </motion.div>
           </div>
 
           <div className="flex max-w-7xl text-wrap justify-evenly items-center">
-            <p className="p-6 text-end text-balance">
-              Our food is made with the freshest ingredients and is perfect for
-              those who want to eat healthy and tasty food. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Officia, eligendi. Deleniti
-              nobis nulla cupiditate reprehenderit aliquid, fuga aliquam ipsum
-              asperiores voluptatum inventore debitis adipisci natus non
-              laboriosam ea perspiciatis ipsam?
-            </p>
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 1 }}
+              transition={{
+                duration: 0.9,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: true }}
+            >
+              <p className="p-6 text-justify">
+                Our food is made with the freshest ingredients and is perfect
+                for those who want to eat healthy and tasty food. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Officia, eligendi.
+                Deleniti nobis nulla cupiditate reprehenderit aliquid, fuga
+                aliquam ipsum asperiores voluptatum inventore debitis adipisci
+                natus non laboriosam ea perspiciatis ipsam?
+              </p>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.5 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -144,13 +164,24 @@ function Hero() {
                 className="p-2 drop-shadow-xl w-[1400px] sm:w-auto md:w-auto lg:w-auto xl:w-auto"
               />
             </motion.div>
-            <p className="p-6 text-balance">
-              Our food is made with the freshest ingredients and is perfect for
-              those who want to eat healthy and tasty food. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Est, ad deleniti eum
-              praesentium temporibus sit unde porro quod commodi et suscipit
-              quos iste harum modi! Tempora iusto eaque at accusantium.
-            </p>
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 1 }}
+              transition={{
+                duration: 0.9,
+                ease: [0.65, 0, 0.35, 1],
+              }}
+              viewport={{ once: true }}
+            >
+              <p className="p-6 text-justify">
+                Our food is made with the freshest ingredients and is perfect
+                for those who want to eat healthy and tasty food. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Est, ad deleniti
+                eum praesentium temporibus sit unde porro quod commodi et
+                suscipit quos iste harum modi! Tempora iusto eaque at
+                accusantium.
+              </p>
+            </motion.div>
           </div>
         </div>
       </motion.div>
