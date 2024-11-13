@@ -2,13 +2,12 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { FaHome } from 'react-icons/fa';
-import { FaInfo } from 'react-icons/fa';
-import { MdConnectWithoutContact } from 'react-icons/md';
-import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import { BsInfoCircleFill } from 'react-icons/bs';
+import { BiSolidFoodMenu } from 'react-icons/bi';
+import { MdContactMail } from 'react-icons/md';
 import Link from 'next/link';
 import DarkmodeButton from './DarkmodeButton';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 function Header() {
   return (
@@ -35,13 +34,9 @@ function Header() {
         >
           <DarkmodeButton />
           <Navbar title="home" address="/" Icon={FaHome} />
-          <Navbar title="about" address="#about" Icon={FaInfo} />
-          <Navbar title="menu" address="#menu" Icon={MdOutlineRestaurantMenu} />
-          <Navbar
-            title="contact"
-            address="#contact"
-            Icon={MdConnectWithoutContact}
-          />
+          <Navbar title="about" address="#about" Icon={BsInfoCircleFill} />
+          <Navbar title="menu" address="#menu" Icon={BiSolidFoodMenu} />
+          <Navbar title="contact" address="#contact" Icon={MdContactMail} />
         </motion.div>
       </div>
     </div>

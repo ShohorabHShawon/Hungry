@@ -8,8 +8,8 @@ function Hero() {
   return (
     <>
       <div
-        className="h-screen flex justify-evenly items-center mx-auto
-        bg-gradient-to-r from-blue-300 to-cyan-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black overflow-hidden"
+        className="min-h-screen flex justify-evenly items-center mx-auto
+        bg-gradient-to-r from-blue-300 to-cyan-200 dark:bg-gradient-to-r dark:from-gray-900 dark:to-black overflow-hidden sm:py-20"
       >
         <div className="container py-6">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 place-items-center min-h-[600px] mx-5">
