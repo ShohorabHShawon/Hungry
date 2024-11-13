@@ -2,9 +2,9 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { FaHome } from 'react-icons/fa';
-import { BsInfoCircleFill } from 'react-icons/bs';
 import { BiSolidFoodMenu } from 'react-icons/bi';
 import { MdContactMail } from 'react-icons/md';
+import { RiFileInfoFill } from 'react-icons/ri';
 import Link from 'next/link';
 import DarkmodeButton from './DarkmodeButton';
 import { motion } from 'framer-motion';
@@ -20,7 +20,6 @@ function Header() {
           className="flex gap-4 items-center"
         >
           <Link href="/">
-            {/* <Image src="/logo.svg" width={200} height={50} alt="logo" /> */}
             <h1 className="text-3xl font-lexend text-orange-600 font-extrabold">
               HUNGRY
             </h1>
@@ -34,7 +33,7 @@ function Header() {
         >
           <DarkmodeButton />
           <Navbar title="home" address="/" Icon={FaHome} />
-          <Navbar title="about" address="#about" Icon={BsInfoCircleFill} />
+          <Navbar title="about" address="#about" Icon={RiFileInfoFill} />
           <Navbar title="menu" address="#menu" Icon={BiSolidFoodMenu} />
           <Navbar title="contact" address="#contact" Icon={MdContactMail} />
         </motion.div>
