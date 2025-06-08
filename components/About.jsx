@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 function About() {
   return (
-    <div className="py-10 bg-gray-200 dark:bg-[#262626]">
+    <div className="py-10 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 0, scale: 0.5 }}
