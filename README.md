@@ -1,4 +1,5 @@
 # Hungry - Restaurant Web App
+![Restaurant Website Cover](./public/cover.png)
 
 Project is under development...
 I'll update after adding every feature.
